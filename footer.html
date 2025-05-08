@@ -1,0 +1,19 @@
+<!-- footer.html -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center small">
+    <p class="mb-1">
+      Office: 1049 North Ashland Avenue, Chicago, IL 60622
+    </p>
+    <p class="mb-1">
+      Phone: <a href="tel:3127356060" class="text-light">312.735.6060</a> |
+      Email: <a href="mailto:info@acicinc.com" class="text-light">info@acicinc.com</a>
+    </p>
+    <p class="mb-0">
+      &copy; <span id="current-year"></span> ACIC Inc. All rights reserved.
+    </p>
+  </div>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+

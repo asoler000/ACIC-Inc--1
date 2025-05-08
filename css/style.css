@@ -1,0 +1,123 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Parallax Section */
+.parallax-section {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4rem 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.parallax-section .overlay.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.parallax-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.parallax-section p, li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+/* Form */
+form label {
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Navbar overrides */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .parallax-section {
+    background-attachment: scroll;
+    padding: 3rem 1rem;
+  }
+
+  .parallax-section .overlay {
+    padding: 2rem 1rem;
+  }
+
+  .navbar-collapse {
+    background-color: #111;
+  }
+
+  .navbar-toggler {
+    border-color: #fff;
+  }
+}
